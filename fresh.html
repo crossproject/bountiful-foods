@@ -54,48 +54,67 @@
         
         <h2>Make your Mix</h2>
         <div class="form">
-            <form method="get">
+            <form method="get" id="fresh-form">
 
             
                 <fieldset>
-                    <label class="top-form">First Name* <input type="text" name="fname" placeholder="First Name" required></label>
-                    <label class="top-form">Email* <input type="email" name="email" placeholder="example@yourdomain.com" required></label>
-                    <label class="top-form">Cell Phone* <input type="tel" name="phone" placeholder="112223334444" required></label>
+                    <label class="top-form">First Name* <input type="text" name="fname" placeholder="First Name" id="form-name" required></label>
+                    <label class="top-form">Email* <input type="email" name="email" placeholder="example@yourdomain.com" id="form-email" required></label>
+                    <label class="top-form">Cell Phone* <input type="tel" name="phone" placeholder="112223334444"  id="form-phone" required></label>
                 </fieldset>
                 
-                <fieldset id="fruit-fieldset">
-                    <label>
-                        <select name="fruit-1" class="fruit-selection" id="fruit-selection-1">
+                <fieldset>
+                    <label class="sbs-form">
+                        <select name="fruit-1" class="fruit-selection" id="fruit-selection-1" required>
                             <option value="">Please Select</option>
                         </select>
                     </label>
 
-                    <label>
-                        <select name="fruit-2" class="fruit-selection" id="fruit-selection-2">
+                    <label class="sbs-form">
+                        <select name="fruit-2" class="fruit-selection" id="fruit-selection-2" required>
                             <option value="">Please Select</option>
                         </select>
                     </label>
 
-                    <label>
-                        <select name="fruit-3" class="fruit-selection" id="fruit-selection-3">
+                    <label class="sbs-form">
+                        <select name="fruit-3" class="fruit-selection" id="fruit-selection-3" required>
                             <option value="">Please Select</option>
                         </select>
                     </label>
                 </fieldset>
 
                 <fieldset>
-                    <textarea name="aditional-instruction" rows="4">Add any additional instructions here...</textarea>
+                    <textarea name="aditional-instruction" rows="4" placeholder="Add any additional instructions here..." id="additional-info"></textarea>
                 </fieldset>
 
 
-                <input type="hidden" id="hidden-data-value">
+                <input type="hidden" id="hidden-date-value">
                 <input type="submit" value="MIX!" id="submit-button">
 
             </form>
         </div>
         
         <div class="return-form">
-
+            <h3>Your Order</h3>
+            <span>Order Date: <strong id="order-date-output"></strong></span>
+            <span>Name: <strong id="order-name-output"></strong></span>
+            <span>Email: <strong id="order-email-output"></strong></span>
+            <span>Cell Phone: <strong id="order-phone-output"></strong></span>
+            <ol>
+                <li>Fruit Selected: <strong id="order-fruit1-output"></strong></li>
+                <li>Fruit Selected: <strong id="order-fruit2-output"></strong></li>
+                <li>Fruit Selected: <strong id="order-fruit3-output"></strong></li>
+            </ol>
+            <span>Aditional instructions: <strong id="order-instructions-output"></strong></span>
+            <ul>
+                <li>Carbohydrates: <strong id="order-carboydrates-output"></strong></li>
+                <li>Protein: <strong id="order-protein-output"></strong></li>
+                <li>Fat: <strong id="order-fat-output"></strong></li>
+                <li>Sugar: <strong id="order-sugar-output"></strong></li>
+                <li>Calories: <strong id="order-calories-output"></strong></li>
+            </ul>
+        
+            
 
         </div>
 
