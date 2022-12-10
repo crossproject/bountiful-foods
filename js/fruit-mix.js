@@ -103,7 +103,3 @@ mixFruit(urlFruitMixJson);
 
 
 
-
-
-// Add new Mix to local storage
-

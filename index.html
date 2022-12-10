@@ -21,13 +21,13 @@
 <body>
     <header>
         <div class="social-media-top">
-            <a class="social-media-icon" href="https://facebook.com" target="_blank"><img src="images/facebook.png"></a>
-            <a class="social-media-icon" href="https://twitter.com" target="_blank"><img src="images/twitter.png"></a>
-            <a class="social-media-icon" href="https://instagram.com" target="_blank"><img src="images/instagram.png"></a>
+            <a class="social-media-icon" href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook logo" loading="lazy"></a>
+            <a class="social-media-icon" href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter logo" loading="lazy"></a>
+            <a class="social-media-icon" href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram logo" loading="lazy"></a>
         </div>
 
         <div class="logo">
-            <a class="logo" href="index.html"><img src="https://via.placeholder.com/75"></a>
+            <a class="logo" href="index.html"><img src="images/logo-75px.png" alt="Bountiful Foods logo"></a>
             <h1>Bountiful Foods</h1>
         </div>
 
@@ -49,7 +49,16 @@
 
     <main>
         <div class="hero-banner">
-            <a href="https://placeholder.com"><img src="https://via.placeholder.com/400x200"></a>
+            
+            
+            <picture>
+                <!-- update
+                <a href="https://placeholder.com"><img src="https://via.placeholder.com/400x200"></a>
+                <source media="(max-width: 75.79em)" srcset="images/hero-image-1100.webp">
+                -->
+                <source media="(max-width: 39.99em)" srcset="images/hero-banner-400px.webp">
+                <img src="images/hero-banner.webp" alt="Hero Banner" loading="lazy">
+            </picture>
         </div>
         <div class="weather-widget">
             <div id="weather-1" class="actual-weather weather-card">
@@ -69,21 +78,23 @@
         </div>
         <div class="fruit-drink">
             <a href="fresh.html">MAKE YOUR MIX! 🥤</a>
-            <span>YOUR MIXES: <em id="mixes"></em></span>
+            <span id="mixes"></span>
         </div>
     </main>
 
     <footer>
         <div class="social-media-bottom">
-            <a class="social-media-icon" href="https://facebook.com" target="_blank"><img src="images/facebook.png"></a>
-            <a class="social-media-icon" href="https://twitter.com" target="_blank"><img src="images/twitter.png"></a>
-            <a class="social-media-icon" href="https://instagram.com" target="_blank"><img src="images/instagram.png"></a>
+            <a class="social-media-icon" href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook logo" loading="lazy"></a>
+            <a class="social-media-icon" href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter logo" loading="lazy"></a>
+            <a class="social-media-icon" href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram logo" loading="lazy"></a>
         </div>
 
         <div class="contact-info-bottom">
+            
+
             <span>Bountiful Foods</span>
-            <span>San Jeronimo 2270, Santa Fe</span>
-            <span>Santa Fe, Argentina</span>
+            <span>7099 Carlsbad Blvd, Carlsbad</span>
+            <span>California, U.S.A</span>
         </div>
 
         <div class="credits">
@@ -93,25 +104,6 @@
             <span>Last Updated: <em id="updated-date"></em></span>
         </div>
 
-<!--
-        <div class="bottom-info">
-            <img src="images/logo.webp" alt="sfcc logo" class="logo">
-
-            <div class="location-info">
-                <span>Santa Fe Chamber of Commerce</span>
-                <span>San Jeronimo 2270, Santa Fe</span>
-                <span>Santa Fe, Argentina</span>
-            </div>
-            
-            <div class="contact-info">
-                <span>info@sfcc.org</span>
-                <span>+54 342 555-5155</span>
-                <span>🌍 Location Map</span>
-            </div>
-        </div>
-        <div class="bottom-box">
-
-        -->
 
 
     </footer>

@@ -1,5 +1,5 @@
-const urlWeatherApi = "https://api.openweathermap.org/data/2.5/weather?id=3836277&units=metric&appid=180d290cb4799e855223c718d2f06c4c"
-const urlForecastApi = "http://api.openweathermap.org/data/2.5/forecast?id=3836277&units=metric&appid=180d290cb4799e855223c718d2f06c4c"
+const urlWeatherApi = "https://api.openweathermap.org/data/2.5/weather?id=5334223&units=metric&appid=180d290cb4799e855223c718d2f06c4c"
+const urlForecastApi = "http://api.openweathermap.org/data/2.5/forecast?id=5334223&units=metric&appid=180d290cb4799e855223c718d2f06c4c"
 const weatherDiv1 = document.getElementById("weather-1");
 const weatherDiv2 = document.getElementById("weather-2");
 const weatherDiv3 = document.getElementById("weather-3");
@@ -53,7 +53,7 @@ function displayWeatherData(weatherApiData,weatherDiv){
     
     
     // Set Icon
-    weatherIcon.setAttribute('src', `http://openweathermap.org/img/wn/${weatherApiData.weather[0].icon}.png`);
+    weatherIcon.setAttribute('src', `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weatherApiData.weather[0].icon}.svg`);
     //
     //weatherIcon.setAttribute('src', `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weatherApiData.weather[0].icon}.svg`);
     weatherIcon.setAttribute('alt', capitalize(weatherApiData.weather[0].description));

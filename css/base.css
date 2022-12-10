@@ -136,7 +136,7 @@ header h1 {
     text-align: center;
     
     box-shadow: 2px 2px 0px #000;
-    background-color: #FFEBEB;
+    border: 1px solid #000;
 }
 .weather-card h2,
 .weather-card h3,
