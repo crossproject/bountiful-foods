@@ -16,48 +16,106 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
         <div class="social-media-top">
-
+            <a class="social-media-icon" href="https://facebook.com" target="_blank"><img src="images/facebook.png"></a>
+            <a class="social-media-icon" href="https://twitter.com" target="_blank"><img src="images/twitter.png"></a>
+            <a class="social-media-icon" href="https://instagram.com" target="_blank"><img src="images/instagram.png"></a>
         </div>
+
         <div class="logo">
-
+            <a class="logo" href="index.html"><img src="https://via.placeholder.com/75"></a>
+            <h1>Bountiful Foods</h1>
         </div>
-        <div id="menu-btn">
 
+        <div class="main-menu-button">    
+            <button id="menu-btn" class="material-symbols-outlined">menu</button>
         </div>
-        <div class="main-menu">
 
+        <div id="primary-nav" class="main-menu">
+            <nav>    
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
         </div>
+
     </header>
 
     <main>
         <div class="hero-banner">
-
+            <a href="https://placeholder.com"><img src="https://via.placeholder.com/400x200"></a>
         </div>
         <div class="weather-widget">
+            <div id="weather-1" class="actual-weather weather-card">
+                
+            </div>
+            <div id="weather-2" class="next-day-weather weather-card">
 
+            </div>
+            <div id="weather-3" class="next-day-weather weather-card">
+
+            </div>
         </div>
         <div class="costal-area-summary">
-
+            <h2>California South Coast</h2>
+            <a class="south-coast-picture" href="https://placeholder.com"><img src="https://via.placeholder.com/150x150"></a>
+            <p>The <strong>California South Coast</strong> region extends from Ventura County to the Mexican Border and includes the counties of Los Angeles, Orange and San Diego. It is known for its sandy beaches, surf-able waves, moderate climate, and large and diverse population. The region is defined by the coastal plains of several major rivers and is bounded by the Transverse Mountain Ranges that include the Santa Monica and Santa Susana Mountains. The south coast of California has extremely high levels of species diversity, many of which are unique to the region, and the greatest number of threatened and endangered species in the state.</p>
         </div>
         <div class="fruit-drink">
-
+            <a href="fresh.html">MAKE YOUR MIX! 🥤</a>
+            <span>YOUR MIXES: <em id="mixes"></em></span>
         </div>
     </main>
 
     <footer>
-        <div class="contact-info-bottom">
-
-        </div>
         <div class="social-media-bottom">
+            <a class="social-media-icon" href="https://facebook.com" target="_blank"><img src="images/facebook.png"></a>
+            <a class="social-media-icon" href="https://twitter.com" target="_blank"><img src="images/twitter.png"></a>
+            <a class="social-media-icon" href="https://instagram.com" target="_blank"><img src="images/instagram.png"></a>
+        </div>
 
+        <div class="contact-info-bottom">
+            <span>Bountiful Foods</span>
+            <span>San Jeronimo 2270, Santa Fe</span>
+            <span>Santa Fe, Argentina</span>
         </div>
+
         <div class="credits">
-            
+            <span>&copy; <em id="year"></em> Bountiful Foods</span>
+            <span class="autor">Luis D. Parra</span>
+            <span>WDD 230 Project</span>
+            <span>Last Updated: <em id="updated-date"></em></span>
         </div>
+
+<!--
+        <div class="bottom-info">
+            <img src="images/logo.webp" alt="sfcc logo" class="logo">
+
+            <div class="location-info">
+                <span>Santa Fe Chamber of Commerce</span>
+                <span>San Jeronimo 2270, Santa Fe</span>
+                <span>Santa Fe, Argentina</span>
+            </div>
+            
+            <div class="contact-info">
+                <span>info@sfcc.org</span>
+                <span>+54 342 555-5155</span>
+                <span>🌍 Location Map</span>
+            </div>
+        </div>
+        <div class="bottom-box">
+
+        -->
+
+
     </footer>
+    <script src="js/main.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>

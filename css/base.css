@@ -1,20 +1,233 @@
 /* 
 *** TYPOGRAPHY ***
+Main
 font-family: 'Open Sans', sans-serif;
+Headings
 font-family: 'Secular One', sans-serif;
 
 *** COLORS ***
 /* CSS HEX
---blood-red: #5c0000ff;
---up-maroon: #751717ff;
---international-orange-engineering: #ba0c0cff;
---red: #ff0000ff;
---misty-rose: #ffebebff;
---honeydew: #ecffebff;
---slimy-green: #27a300ff;
---india-green: #2a850eff;
---pakistan-green: #2d661bff;
---lincoln-green: #005c00ff;
+--blood-red: #5C0000;
+--up-maroon: #751717;
+--international-orange-engineering: #BA0C0C;
+--red: #FF0000;
+--misty-rose: #FFEBEB;
+--honeydew: #ECFFEB;
+--slimy-green: #27A300;
+--india-green: #2A850E;
+--pakistan-green: #2D661B;
+--lincoln-green: #005C00;
 
 URL: https://coolors.co/5c0000-751717-ba0c0c-ff0000-ffebeb-ecffeb-27a300-2a850e-2d661b-005c00
 */
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+/****** HEADER ******/
+header {
+    display: grid;
+}
+/* MAIN TITLE */
+header h1 {
+    font-family: 'Secular One', sans-serif;
+    color: #5C0000;
+}
+/* SOCIAL MEDIA TOP BAR */
+.social-media-top {
+    background-color: #005C00;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+.social-media-icon {
+    margin: 5px;
+}
+
+/* TOP LOGO */
+.logo {
+    grid-row: 2;
+    float: left;
+    margin-right: 10px;
+}
+
+/* MENU BUTTON */
+
+.main-menu-button {
+    grid-row: 2;
+    align-self: center;
+    justify-self: end;
+    margin: .2rem 2vw;
+}
+
+.main-menu-button button {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+    
+}
+
+/* SMALL MENU */
+.main-menu {
+    display: none;
+}
+.display-menu{
+    grid-row: 3;
+    grid-column: 1/3;
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+}
+.main-menu nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.main-menu nav ul li {
+    list-style-type: none;
+    margin: 0;
+    
+
+    width: 100%;
+    /*
+    background-color: #005C00;
+    border: 2px solid #fff;
+    padding: 20px;
+    margin: 1px;
+    */
+}
+.main-menu nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 20px 5px;
+    margin: 1px;
+    background-color: #005C00;
+    border: 2px solid #ECFFEB;
+    
+
+}
+.main-menu nav ul li a.active {
+    background-color: #2A850E;
+    
+}
+
+/****** MAIN ******/
+/* HERO */
+.hero-banner img {
+    width: 100%;
+}
+/* WEATHER CARD */
+.weather-widget {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    
+    box-shadow: 2px 2px 0px #000;
+    background-color: #FFEBEB;
+}
+.weather-card h2,
+.weather-card h3,
+.weather-card img {
+    
+    align-self: center;
+    margin: 0;
+}
+
+.actual-weather img {
+    max-width: 75px;
+    
+}
+.actual-weather span {
+    
+    font-style: italic;
+}
+.next-day-weather {
+    margin-left: 5px;
+}
+.next-day-weather img {
+    max-width: 50px;
+}
+
+/* COAST SUMMARY */
+.costal-area-summary {
+    padding: 0 10px;
+}
+.costal-area-summary h2{
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+}
+.south-coast-picture {
+    float: left;
+    margin: 10px;
+}
+
+/* FRUIT MIX BUTTON */
+.fruit-drink {
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fruit-drink a {
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 30px;
+    background-color: #27A300;
+    color: #fff;
+    font-family: 'Secular One', sans-serif;
+    border-radius: 4px;
+}
+.fruit-drink span {
+    color: #27A300;
+    font-family: 'Secular One', sans-serif;
+}
+
+/****** FRESH ******/
+/* TITLE */
+.fresh-page h2 {
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    color: #BA0C0C;
+}
+
+.form form fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+/* FORM */
+
+
+/****** FOOTER ******/
+footer {
+    background: #ECFFEB;
+    color: #000;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-info-bottom,
+.credits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+.autor {
+    font-weight: bold;
+}
