@@ -1,10 +1,13 @@
 
+const newDate = new Date(Date.now());
 const urlFruitMixJson = "https://brotherblazzard.github.io/canvas-content/fruit.json";
 const hiddenDataValue = document.getElementById("hidden-date-value");
 const freshForm = document.getElementById("fresh-form");
-const newDate = new Date(Date.now());
+const submitButton = document.getElementById("submit-button");
+
 
 hiddenDataValue.setAttribute("value",newDate.toLocaleDateString("en-US"));
+
 freshForm.addEventListener("submit",getFormValues);
 
 async function mixFruit(jsonFruitMix){
@@ -45,6 +48,10 @@ function saveMixLocal(){
     };
 }
 
+function validateForm(){
+    document.getElementById("fresh-form").classList.toggle("validated-form")
+}
+submitButton.onclick = validateForm;
 function getFormValues(event){
     
     
@@ -62,6 +69,9 @@ function getFormValues(event){
     let fruitSel3 = JSON.parse(document.getElementById("fruit-selection-3").value);
 
     let additionalInfo = document.getElementById("additional-info").value;
+    if(additionalInfo == ""){
+        additionalInfo = "N/A"
+    }
 
     let carbohydrates = (fruitSel1.carbohydrates + fruitSel2.carbohydrates + fruitSel3.carbohydrates).toFixed(2);
     let protein = (fruitSel1.protein + fruitSel2.protein + fruitSel3.protein).toFixed(2);
@@ -73,6 +83,7 @@ function getFormValues(event){
 
     displayFormValues(formDate,formName,formEmail,formPhone,fruit1,fruit2,fruit3,carbohydrates,protein,fat,sugar,calories,additionalInfo);
     saveMixLocal();
+    document.getElementById("fresh-form").classList.toggle("validated-form");
     freshForm.reset();
     event.preventDefault();
     
@@ -95,8 +106,13 @@ function displayFormValues(date,name,email,phone,fruit1,fruit2,fruit3,carbohydra
     document.querySelector("#order-calories-output").innerHTML = calories;
 
     document.querySelector("#order-instructions-output").innerHTML = additionalInfo;
+    toggleReturnOrder();
 }
 
+function toggleReturnOrder(){
+    document.querySelector(".return-form").classList.toggle("show-return-form");
+    
+}
 
 mixFruit(urlFruitMixJson);
 

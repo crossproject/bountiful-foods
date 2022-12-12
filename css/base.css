@@ -49,8 +49,9 @@ header h1 {
 /* TOP LOGO */
 .logo {
     grid-row: 2;
-    float: left;
     margin-right: 10px;
+    display: flex;
+    align-items: center;
 }
 
 /* MENU BUTTON */
@@ -92,15 +93,8 @@ header h1 {
 .main-menu nav ul li {
     list-style-type: none;
     margin: 0;
-    
-
     width: 100%;
-    /*
-    background-color: #005C00;
-    border: 2px solid #fff;
-    padding: 20px;
-    margin: 1px;
-    */
+
 }
 .main-menu nav ul li a {
     text-decoration: none;
@@ -110,8 +104,6 @@ header h1 {
     margin: 1px;
     background-color: #005C00;
     border: 2px solid #ECFFEB;
-    
-
 }
 .main-menu nav ul li a.active {
     background-color: #2A850E;
@@ -122,12 +114,14 @@ header h1 {
 /* HERO */
 .hero-banner img {
     width: 100%;
+    margin-bottom: 10px;
 }
 /* WEATHER CARD */
 .weather-widget {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin: 0 20px;
 }
 .weather-card {
     display: flex;
@@ -145,13 +139,16 @@ header h1 {
     align-self: center;
     margin: 0;
 }
+.weather-card h2 {
+    font-size: 1.1rem;
+}
 
 .actual-weather img {
     max-width: 75px;
     
 }
 .actual-weather span {
-    
+    font-size: 0.75rem;
     font-style: italic;
 }
 .next-day-weather {
@@ -196,13 +193,13 @@ header h1 {
     font-family: 'Secular One', sans-serif;
 }
 
+#mixes {
+    margin-top: 15px;
+
+}
 /****** FRESH ******/
 /* TITLE */
-.fresh-page h2 {
-    text-align: center;
-    font-family: 'Secular One', sans-serif;
-    color: #BA0C0C;
-}
+
 
 .form form fieldset {
     display: flex;
@@ -210,8 +207,94 @@ header h1 {
 }
 
 /* FORM */
+.form {
+    max-width: 360px;
+    margin: 0 auto;
+}
+#fresh-form fieldset {
+    border-radius: 10px;
+    /*
+    margin: 20px;
+    padding: 15px;
+    */
+}
 
+.top-form,
+.sbs-form,
+.bottom-form {
+    margin: 10px 0;
+}
 
+.top-form input,
+.sbs-form select,
+#additional-info {
+    display: block;
+    width: 19rem;
+    padding: .75rem;
+    border: none;
+}
+
+.validated-form input:required:valid,
+.validated-form select:required:valid {
+    border-bottom: 2px solid green;
+}
+.validated-form input:required,
+.validated-form select:required {
+    border-bottom: 2px solid red;
+}
+.return-form {
+    display: none;
+}
+.show-return-form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid #5C0000;
+    border-radius: 10px;
+    background-color: #FFEBEB;
+}
+
+#submit-button {
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px 30px;
+    background-color: #27A300;
+    color: #fff;
+    font-family: 'Secular One', sans-serif;
+    border-radius: 4px;
+    width: 360px;
+}
+/****** ABOUT US ******/
+.fresh-top {
+    margin: 10px;
+    padding: 10px;
+}
+.fresh-top p {
+    text-align: center;
+}
+.info-banner {
+    margin: 0 auto;
+}
+
+.find-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+}
+
+.store-pictures {
+    display: flex;
+    justify-content: space-between;
+}
+
+iframe {
+    width: 100%;
+    margin: 10px 0;
+}
 /****** FOOTER ******/
 footer {
     background: #ECFFEB;
@@ -230,4 +313,16 @@ footer {
 }
 .autor {
     font-weight: bold;
+}
+
+/* GENERAL VALUES */
+.main-headers-2 {
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    color: #BA0C0C;
+}
+.main-headers-3 {
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    color: #751717;
 }

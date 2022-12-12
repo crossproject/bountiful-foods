@@ -27,7 +27,7 @@
         </div>
 
         <div class="logo">
-            <a class="logo" href="index.html"><img src="images/logo-75px.png" alt="Bountiful Foods logo"></a>
+            <a class="logo" href="index.html"><img src="images/logo-75px.png" alt="Bountiful Foods logo" loading="lazy"></a>
             <h1>Bountiful Foods</h1>
         </div>
 
@@ -72,8 +72,15 @@
             </div>
         </div>
         <div class="costal-area-summary">
-            <h2>California South Coast</h2>
-            <a class="south-coast-picture" href="https://placeholder.com"><img src="https://via.placeholder.com/150x150"></a>
+            <h2 class="main-headers-2">California South Coast</h2>
+            <picture class="south-coast-picture">
+                <!-- update
+                <source media="(max-width: 75.79em)" srcset="images/hero-image-1100.webp">
+                -->
+                <source media="(max-width: 39.99em)" srcset="images/beach-150px.webp">
+                <img src="images/beach.webp" alt="Beach picture" loading="lazy">
+            </picture>
+            
             <p>The <strong>California South Coast</strong> region extends from Ventura County to the Mexican Border and includes the counties of Los Angeles, Orange and San Diego. It is known for its sandy beaches, surf-able waves, moderate climate, and large and diverse population. The region is defined by the coastal plains of several major rivers and is bounded by the Transverse Mountain Ranges that include the Santa Monica and Santa Susana Mountains. The south coast of California has extremely high levels of species diversity, many of which are unique to the region, and the greatest number of threatened and endangered species in the state.</p>
         </div>
         <div class="fruit-drink">

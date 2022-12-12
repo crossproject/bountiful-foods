@@ -1,5 +1,5 @@
 const urlWeatherApi = "https://api.openweathermap.org/data/2.5/weather?id=5334223&units=metric&appid=180d290cb4799e855223c718d2f06c4c"
-const urlForecastApi = "http://api.openweathermap.org/data/2.5/forecast?id=5334223&units=metric&appid=180d290cb4799e855223c718d2f06c4c"
+const urlForecastApi = "https://api.openweathermap.org/data/2.5/forecast?id=5334223&units=metric&appid=180d290cb4799e855223c718d2f06c4c"
 const weatherDiv1 = document.getElementById("weather-1");
 const weatherDiv2 = document.getElementById("weather-2");
 const weatherDiv3 = document.getElementById("weather-3");

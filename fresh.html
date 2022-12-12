@@ -21,13 +21,13 @@
 <body>
     <header>
         <div class="social-media-top">
-            <a class="social-media-icon" href="https://facebook.com" target="_blank"><img src="images/facebook.png"></a>
-            <a class="social-media-icon" href="https://twitter.com" target="_blank"><img src="images/twitter.png"></a>
-            <a class="social-media-icon" href="https://instagram.com" target="_blank"><img src="images/instagram.png"></a>
+            <a class="social-media-icon" href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook logo" loading="lazy"></a>
+            <a class="social-media-icon" href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter logo" loading="lazy"></a>
+            <a class="social-media-icon" href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram logo" loading="lazy"></a>
         </div>
 
         <div class="logo">
-            <a class="logo" href="index.html"><img src="https://via.placeholder.com/75"></a>
+            <a class="logo" href="index.html"><img src="images/logo-75px.png" alt="Bountiful Foods logo" loading="lazy"></a>
             <h1>Bountiful Foods</h1>
         </div>
 
@@ -49,10 +49,17 @@
 
     <main class="fresh-page">
         <div class="hero-banner">
-            <a href="https://placeholder.com"><img src="https://via.placeholder.com/400x200"></a>
+            <picture>
+                <!-- update
+                <a href="https://placeholder.com"><img src="https://via.placeholder.com/400x200"></a>
+                <source media="(max-width: 75.79em)" srcset="images/hero-image-1100.webp">
+                -->
+                <source media="(max-width: 39.99em)" srcset="images/fresh-banner-400px.webp">
+                <img src="images/fresh-banner.webp" alt="Fresh Banner" loading="lazy">
+            </picture>
         </div>
         
-        <h2>Make your Mix</h2>
+        <h2 class="main-headers-2">Make your Mix</h2>
         <div class="form">
             <form method="get" id="fresh-form">
 
@@ -61,30 +68,33 @@
                     <label class="top-form">First Name* <input type="text" name="fname" placeholder="First Name" id="form-name" required></label>
                     <label class="top-form">Email* <input type="email" name="email" placeholder="example@yourdomain.com" id="form-email" required></label>
                     <label class="top-form">Cell Phone* <input type="tel" name="phone" placeholder="112223334444"  id="form-phone" required></label>
-                </fieldset>
-                
-                <fieldset>
+
                     <label class="sbs-form">
+                        Add Fruit* 
                         <select name="fruit-1" class="fruit-selection" id="fruit-selection-1" required>
                             <option value="">Please Select</option>
                         </select>
                     </label>
 
                     <label class="sbs-form">
+                        Add Fruit* 
                         <select name="fruit-2" class="fruit-selection" id="fruit-selection-2" required>
                             <option value="">Please Select</option>
                         </select>
                     </label>
 
                     <label class="sbs-form">
+                        Add Fruit* 
                         <select name="fruit-3" class="fruit-selection" id="fruit-selection-3" required>
                             <option value="">Please Select</option>
                         </select>
                     </label>
-                </fieldset>
 
-                <fieldset>
-                    <textarea name="aditional-instruction" rows="4" placeholder="Add any additional instructions here..." id="additional-info"></textarea>
+                    <label class="bottom-form">
+                        Additional information
+                        <textarea name="aditional-instruction" rows="4" placeholder="Add any additional instructions here..." id="additional-info"></textarea>
+                    </label>
+                    
                 </fieldset>
 
 
@@ -95,7 +105,7 @@
         </div>
         
         <div class="return-form">
-            <h3>Your Order</h3>
+            <h3 class="main-headers-3">Your Order</h3>
             <span>Order Date: <strong id="order-date-output"></strong></span>
             <span>Name: <strong id="order-name-output"></strong></span>
             <span>Email: <strong id="order-email-output"></strong></span>
@@ -122,15 +132,17 @@
 
     <footer>
         <div class="social-media-bottom">
-            <a class="social-media-icon" href="https://facebook.com" target="_blank"><img src="images/facebook.png"></a>
-            <a class="social-media-icon" href="https://twitter.com" target="_blank"><img src="images/twitter.png"></a>
-            <a class="social-media-icon" href="https://instagram.com" target="_blank"><img src="images/instagram.png"></a>
+            <a class="social-media-icon" href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook logo" loading="lazy"></a>
+            <a class="social-media-icon" href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter logo" loading="lazy"></a>
+            <a class="social-media-icon" href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram logo" loading="lazy"></a>
         </div>
 
         <div class="contact-info-bottom">
+            
+
             <span>Bountiful Foods</span>
-            <span>San Jeronimo 2270, Santa Fe</span>
-            <span>Santa Fe, Argentina</span>
+            <span>7099 Carlsbad Blvd, Carlsbad</span>
+            <span>California, U.S.A</span>
         </div>
 
         <div class="credits">
@@ -139,6 +151,7 @@
             <span>WDD 230 Project</span>
             <span>Last Updated: <em id="updated-date"></em></span>
         </div>
+
 
 
     </footer>
