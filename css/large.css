@@ -1,4 +1,31 @@
 /* LARGE STYLE */
-@media (min-width:75.80em) {
+@media (min-width:61.80em) {
+    /*** MAIN ***/
+    .home-page,
+    .fresh-page,
+    .about-page {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    /******* WEATHER ******/
+    .weather-widget {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 0 20px;
+        box-shadow: none;
+    }
 
+    .weather-card {
+        box-shadow: 2px 2px 0px #000;
+    }
+    .store-pictures {
+        justify-content: center;
+    }
+    iframe {
+        height: 500px;
+    }
+    .store-pictures picture {
+        margin: 0 10px;
+    }
 }

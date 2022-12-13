@@ -289,6 +289,8 @@ header h1 {
 .store-pictures {
     display: flex;
     justify-content: space-between;
+    max-width: 430px;
+    margin: 0 auto;
 }
 
 iframe {
