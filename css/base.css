@@ -288,10 +288,17 @@ header h1 {
 
 .store-pictures {
     display: flex;
-    justify-content: space-between;
-    max-width: 430px;
+    justify-content: center;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
+
+.healthy-spot {
+    grid-column: 1/3;
+    padding: 0 10px;
+    text-align: center;
+}
+
 
 iframe {
     width: 100%;
@@ -312,6 +319,9 @@ footer {
     flex-direction: column;
     align-items: center;
     margin: 10px 0;
+}
+.credits a {
+    color: #000;
 }
 .autor {
     font-weight: bold;

@@ -1,6 +1,0 @@
-OpenWeatherMap (Weather/Forecast API)
-Google Fonts
-Google Icons
-EnvatoElements (Weather Icons)
-Flaticon (social media Icons)
-pixabay.com images

@@ -10,6 +10,7 @@ async function apiFetch(urlWeatherApi,urlForecastApi,weatherDiv1,weatherDiv2,wea
         const wResponse = await fetch(urlWeatherApi);
         if (wResponse.ok) {
             const weatherData = await wResponse.json();
+            console.log(weatherData)
             displayWeatherData(weatherData,weatherDiv1);
             displayLongWeatherData(weatherData,weatherDiv1);
       } else {
@@ -23,10 +24,10 @@ async function apiFetch(urlWeatherApi,urlForecastApi,weatherDiv1,weatherDiv2,wea
         // Forecast API Call
         const fResponse = await fetch(urlForecastApi);
         if (fResponse.ok) {
-            const weatherData = await fResponse.json();
-            console.log(weatherData)
-            displayWeatherData(weatherData.list[4],weatherDiv2);
-            displayWeatherData(weatherData.list[12],weatherDiv3);
+            const weatherFData = await fResponse.json();
+            console.log(weatherFData)
+            displayWeatherData(weatherFData.list[4],weatherDiv2);
+            displayWeatherData(weatherFData.list[12],weatherDiv3);
       } else {
           throw Error(await fResponse.text());
       }

@@ -26,6 +26,15 @@
         height: 500px;
     }
     .store-pictures picture {
+        filter: saturate(80%);
         margin: 0 10px;
+    }
+
+    /*** FOOTER ***/
+    .social-media-bottom {
+        padding-right: 20%;
+    }
+    .contact-info-bottom {
+        padding-left: 20%;
     }
 }
