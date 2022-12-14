@@ -15,8 +15,6 @@ async function mixFruit(jsonFruitMix){
         const response = await fetch(jsonFruitMix);
         if (response.ok) {
             const data = await response.json();
-            // DELETE this CONSOLE
-            console.log(data)
             data.forEach(fruit => {
             displayInput(fruit)
             });

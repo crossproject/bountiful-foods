@@ -10,7 +10,6 @@ async function apiFetch(urlWeatherApi,urlForecastApi,weatherDiv1,weatherDiv2,wea
         const wResponse = await fetch(urlWeatherApi);
         if (wResponse.ok) {
             const weatherData = await wResponse.json();
-            console.log(weatherData)
             displayWeatherData(weatherData,weatherDiv1);
             displayLongWeatherData(weatherData,weatherDiv1);
       } else {
@@ -25,7 +24,6 @@ async function apiFetch(urlWeatherApi,urlForecastApi,weatherDiv1,weatherDiv2,wea
         const fResponse = await fetch(urlForecastApi);
         if (fResponse.ok) {
             const weatherFData = await fResponse.json();
-            console.log(weatherFData)
             displayWeatherData(weatherFData.list[4],weatherDiv2);
             displayWeatherData(weatherFData.list[12],weatherDiv3);
       } else {
@@ -55,8 +53,6 @@ function displayWeatherData(weatherApiData,weatherDiv){
     
     // Set Icon
     weatherIcon.setAttribute('src', `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weatherApiData.weather[0].icon}.svg`);
-    //
-    //weatherIcon.setAttribute('src', `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weatherApiData.weather[0].icon}.svg`);
     weatherIcon.setAttribute('alt', capitalize(weatherApiData.weather[0].description));
     // Set Temperature
     temperature.textContent = `${weatherApiData.main.temp.toFixed(0)} °C`;
